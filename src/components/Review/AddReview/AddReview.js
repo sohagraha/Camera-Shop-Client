@@ -11,8 +11,6 @@ import useAuth from '../../../hooks/useAuth';
 const AddReview = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    //https://stark-badlands-88982.herokuapp.com/
-
     const { user } = useAuth();
 
     const onSubmit = datas => {

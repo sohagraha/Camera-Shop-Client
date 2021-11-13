@@ -17,7 +17,7 @@ const ManageProduct = (props) => {
                     <p className="card-text">{desc?.slice(0, 100)}</p>
                     <p>Price : {price} Taka</p>
                 </div>
-                <button onClick={() => props.handelDeleteOrder(_id)} className="text-danger border-1" ><i className="fas fa-trash-alt"></i></button>
+                <button onClick={() => props.handelDeleteOrder(_id)} className="text-danger border-1" >Delete <i className="fas fa-trash-alt"></i></button>
             </div>
         </Col >
     );

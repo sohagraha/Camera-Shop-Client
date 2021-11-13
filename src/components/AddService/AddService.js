@@ -7,8 +7,6 @@ import "./AddService.css"
 const AddService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    //https://stark-badlands-88982.herokuapp.com/
-
     const onSubmit = data => {
         axios.post('https://safe-beach-81042.herokuapp.com/services', data)
             .then(res => {

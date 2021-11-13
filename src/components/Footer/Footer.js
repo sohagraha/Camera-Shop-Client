@@ -37,14 +37,14 @@ const Footer = () => {
                                     <br />
                                     <span ><i className="fas fa-phone text-warning"></i> 220-314-1583</span>
                                     <br />
-                                    <span><i className="far fa-envelope text-warning"></i> support@traveliya.com</span>
+                                    <span><i className="far fa-envelope text-warning"></i> support@camerazone.com</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* Copyright  */}
-                <h6><i className="fas fa-copyright text-warning"></i> Traveliya . All right reserved.</h6>
+                <h6><i className="fas fa-copyright text-warning"></i> CameraZone . All right reserved.</h6>
             </div>
         </>
     );
