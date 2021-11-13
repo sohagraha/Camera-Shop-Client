@@ -29,6 +29,8 @@ const Orderform = () => {
             <hr className="w-50 mx-auto" />
             <h3 className="fw-bold">Booking Now</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
+                <input disabled className="mt-2 p-2" value={user?.displayName} />
+                <br />
                 <input className="m-2" placeholder="Address" {...register("address")} />
 
                 <br />

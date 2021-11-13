@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import Footer from '../Footer/Footer';
 import Orderform from '../Orderform/Orderform';
 
@@ -10,7 +11,7 @@ const ServiceDetails = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState([])
     useEffect(() => {
-        fetch(`https://safe-beach-81042.herokuapp.com/services/${serviceId}`)
+        fetch(`http://localhost:5000/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
