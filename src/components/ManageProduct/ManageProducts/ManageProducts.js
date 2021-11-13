@@ -13,7 +13,7 @@ const ManageProducts = () => {
 
     // delete service as like order 
     const handelDeleteOrder = id => {
-        const proceed = window.confirm('Are you sure, you want to delete order?');
+        const proceed = window.confirm('Are you sure, you want to Delete Product?');
         if (proceed) {
             const url = `https://safe-beach-81042.herokuapp.com/services/${id}`;
             fetch(url, {
