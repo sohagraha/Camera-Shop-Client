@@ -1,0 +1,9 @@
+.bg:hover{
+    color: black;
+    border-radius: 20px;
+    border: 2px solid rgb(203, 231, 40);
+}
+.brand{
+    height: 40px;
+    width: 40px;
+}

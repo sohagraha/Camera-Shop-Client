@@ -1,0 +1,11 @@
+.containers{
+    background-image: url("https://wallpaperaccess.com/full/3124512.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(43, 41, 41, 0.657);
+    background-blend-mode: darken;
+}
+.pad-right{
+    border-right: 2px solid black;
+}

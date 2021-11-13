@@ -1,0 +1,34 @@
+.mainCard{
+    border-bottom: 8px solid rgb(80, 90, 230);
+    height: 240px;
+}
+.images{
+    border-radius: 17px;
+    height: 250px;
+}
+.highlight{
+    background-color: rgba(128, 240, 240, 0.918);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+/* card style when no hover */
+.card{
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+/* button style when no hover */
+.btn-back{
+    background-color: #145cf7;
+}
+/* button style when hover */
+.btn-back:hover{
+    background-color: #08276b;
+}
+.service-img{
+    object-fit: cover;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
