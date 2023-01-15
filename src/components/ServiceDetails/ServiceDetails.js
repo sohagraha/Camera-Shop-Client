@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState([])
     useEffect(() => {
-        fetch(`https://safe-beach-81042.herokuapp.com/services/${serviceId}`)
+        fetch(`https://camera-shop-api.projuktibangla.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])

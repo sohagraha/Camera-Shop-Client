@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     const handleSubmit = e => {
         const user = { email }
 
-        fetch('https://safe-beach-81042.herokuapp.com/users/admin', {
+        fetch('https://camera-shop-api.projuktibangla.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

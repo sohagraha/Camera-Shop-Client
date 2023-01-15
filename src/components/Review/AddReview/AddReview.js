@@ -16,7 +16,7 @@ const AddReview = () => {
     const onSubmit = datas => {
         const data = { ...datas, "rating": value, "lables": labels[hover !== -1 ? hover : value], display: user?.displayName }
         console.log(data);
-        axios.post('https://safe-beach-81042.herokuapp.com/reviews', data)
+        axios.post('https://camera-shop-api.projuktibangla.com/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Added Succesfully")

@@ -80,7 +80,7 @@ const useFirebase = () => {
 
 
     useEffect(() => {
-        fetch(`https://safe-beach-81042.herokuapp.com/users/${user.email}`)
+        fetch(`https://camera-shop-api.projuktibangla.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -97,7 +97,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName }
-        fetch('https://safe-beach-81042.herokuapp.com/users', {
+        fetch('https://camera-shop-api.projuktibangla.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

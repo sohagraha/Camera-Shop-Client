@@ -6,7 +6,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
     // fetch the data from JSON file 
     useEffect(() => {
-        fetch('https://safe-beach-81042.herokuapp.com/reviews')
+        fetch('https://camera-shop-api.projuktibangla.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, []);

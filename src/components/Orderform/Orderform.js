@@ -16,7 +16,7 @@ const Orderform = () => {
     const onSubmit = formData => {
         const data = { ...formData, "mail": userEmail, "name": userName, "status": "pending" }
 
-        axios.post('https://safe-beach-81042.herokuapp.com/orders', data)
+        axios.post('https://camera-shop-api.projuktibangla.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Order Succesfully")

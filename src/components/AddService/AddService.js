@@ -8,7 +8,7 @@ const AddService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        axios.post('https://safe-beach-81042.herokuapp.com/services', data)
+        axios.post('https://camera-shop-api.projuktibangla.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Added Succesfully")

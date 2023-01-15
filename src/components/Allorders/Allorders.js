@@ -8,7 +8,7 @@ const Allorders = () => {
     const [allorders, setAllorders] = useState([]);
 
     useEffect(() => {
-        fetch('https://safe-beach-81042.herokuapp.com/orders')
+        fetch('https://camera-shop-api.projuktibangla.com/orders')
             .then(res => res.json()
                 .then(data => setAllorders(data)))
     }, [allorders])
@@ -16,7 +16,7 @@ const Allorders = () => {
     const handelDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete order?');
         if (proceed) {
-            const url = `https://safe-beach-81042.herokuapp.com/orders/${id}`;
+            const url = `https://camera-shop-api.projuktibangla.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const Allorders = () => {
     const handelAcceptOrder = id => {
         const proceed = window.confirm('Are you sure, you want to Accept order?');
         if (proceed) {
-            const url = `https://safe-beach-81042.herokuapp.com/orders/${id}`;
+            const url = `https://camera-shop-api.projuktibangla.com/orders/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

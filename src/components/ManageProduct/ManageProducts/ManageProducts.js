@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const [services, setServices] = useState([]);
     // fetch the data from JSON file 
     useEffect(() => {
-        fetch('https://safe-beach-81042.herokuapp.com/services')
+        fetch('https://camera-shop-api.projuktibangla.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);
@@ -15,7 +15,7 @@ const ManageProducts = () => {
     const handelDeleteOrder = id => {
         const proceed = window.confirm('Are you sure, you want to Delete Product?');
         if (proceed) {
-            const url = `https://safe-beach-81042.herokuapp.com/services/${id}`;
+            const url = `https://camera-shop-api.projuktibangla.com/services/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
